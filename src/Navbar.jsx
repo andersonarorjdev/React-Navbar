@@ -3,12 +3,15 @@ import React from 'react';
 
 //Imports to styled-components;
 import GlobalReset from './styles/reset';
-import {NavbarTag} from './styled-navbar';
+import {NavbarTag, Logo} from './styled-navbar';
+import Logoimg from './birthday.png';
+
 
 const Navbar = props =>{
   return(
-    <NavbarTag bgcolor="#2221da" height="30vh">
+    <NavbarTag bgcolor="#2221da" height="10vh">
         <GlobalReset />
+        <Logo src={Logoimg}></Logo>
     </NavbarTag>
   );
 }
